@@ -10,7 +10,7 @@
     http://www.boost.org/LICENSE_1_0.txt
 */
 
-/// Generate a random numhber between 0 and x.
+/// Generate a random numhber between [0, x).
 int random_zero_to( int x );
 
 #endif // #if !defined( RANDOM_UTILITY_H_20131012175850 )
