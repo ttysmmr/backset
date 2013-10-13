@@ -10,8 +10,12 @@
     http://www.boost.org/LICENSE_1_0.txt
 */
 
-/// Generate a random numhber between [0, x).
+/// Generate a random number between [0, x).
 int random_zero_to( int x );
+
+/// Generate a random number between [a, b).
+int random_between( int a, int b );
+
 
 #endif // #if !defined( RANDOM_UTILITY_H_20131012175850 )
 

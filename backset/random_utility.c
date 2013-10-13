@@ -11,8 +11,16 @@
 
 #include <stdlib.h>
 
+#include <numeric.h>
+#include <algorithm.h>
+
 int random_zero_to( int const x )
 {
     return ( rand() / (RAND_MAX / x + 1) );
+}
+
+int random_between( int a, int b )
+{
+    return MIN( a, b ) + random_zero_to( half_open_interval_elements( a, b ) );
 }
 
