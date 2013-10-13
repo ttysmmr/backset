@@ -2,7 +2,7 @@
 #define NUMERIC_H_20131009191253
 
 /** @file
-    Declaration on accumulate functions.
+    Declaration on numeric values.
     
     Copyright (c) 2013 ttysmmr
     Distributed under the Boost Software License, Version 1.0.
@@ -40,5 +40,8 @@ float accumulate_float( float const* first, float const* last, float init );
 
 /// @overload accumulate_char
 double accumulate_double( double const* first, double const* last, double init );
+
+/// Get a integer elements number between [a, b).
+int half_open_interval_elements( int a, int b );
 
 #endif // #if !defined( NUMERIC_H_20131009191253 )
