@@ -7,7 +7,7 @@
     http://www.boost.org/LICENSE_1_0.txt
 */
 
-#include "numeric.h"
+#include <numeric.h>
 
 #define DEFINE_ACCUMULATE_FUNCTION( suffix, type ) \
     type accumulate_##suffix( type const* first, type const* last, type init ) \
