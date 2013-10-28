@@ -1,5 +1,5 @@
-#if !defined( RANDOM_UTILITY_H_20131012175850 )
-#define RANDOM_UTILITY_H_20131012175850
+#if !defined( RANDOM_H_20131029003743 )
+#define RANDOM_H_20131029003743
 
 /** @file
     Declaration on random generator.
@@ -22,5 +22,5 @@ int random_between( int a, int b );
 /// @param stddev standard devuation
 double gaussrand(double mean, double stddev);
 
-#endif // #if !defined( RANDOM_UTILITY_H_20131012175850 )
+#endif // #if !defined( RANDOM_H_20131029003743 )
 
