@@ -16,4 +16,7 @@
 /// Return the largest
 #define MAX( a, b ) ((a < b) ? b: a)
 
+/// limit a number between two values.
+#define LIMIT( min, max, value ) (MAX( min, MIN( max, value ) ))
+
 #endif // #if !defined( ALGORITHM_H_20131014001917 )
