@@ -13,9 +13,9 @@
 #include <stdbool.h>
 
 /// big endian checker.
-bool is_bigendian(void);
+bool IsBigEndian(void);
 
 /// little endian checker.
-bool is_littleendian(void);
+bool IsLittleEndian(void);
 
 #endif // #if !defined( ENDIAN_H_20131011004339 )

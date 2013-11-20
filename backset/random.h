@@ -11,16 +11,16 @@
 */
 
 /// Generate a random number between [0, x).
-int random_zero_to( int x );
+int RandomZeroTo( int x );
 
 /// Generate a random number between [a, b).
-int random_between( int a, int b );
+int RandomBetween( int a, int b );
 
 /// Generate a random number from a Gaussian distribution.
 /// This function uses a Box-Muller transform.
 /// @param mean 
 /// @param stddev standard devuation
-double gaussrand(double mean, double stddev);
+double GaussRand(double mean, double stddev);
 
 #endif // #if !defined( RANDOM_H_20131029003743 )
 

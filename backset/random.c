@@ -15,17 +15,17 @@
 #include <numeric.h>
 #include <algorithm.h>
 
-int random_zero_to( int const x )
+int RandomZeroTo( int const x )
 {
     return ( rand() / (RAND_MAX / x + 1) );
 }
 
-int random_between( int a, int b )
+int RandomBetween( int a, int b )
 {
-    return MIN( a, b ) + random_zero_to( half_open_interval_elements( a, b ) );
+    return MIN( a, b ) + RandomZeroTo( half_open_interval_elements( a, b ) );
 }
 
-double gaussrand(double mean, double stddev)
+double GaussRand(double mean, double stddev)
 {
     static double v2, s;
     static int phase = 0;

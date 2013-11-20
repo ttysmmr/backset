@@ -11,13 +11,13 @@
 
 #include <stdbool.h>
 
-bool is_bigendian(void)
+bool IsBigEndian(void)
 {
     int const i = 1;
     return (*(char*)&i) == 0;
 }
 
-bool is_littleendian(void)
+bool IsLittleEndian(void)
 {
-    return !is_bigendian();
+    return !IsBigEndian();
 }
