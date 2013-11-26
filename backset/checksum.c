@@ -25,8 +25,8 @@ static unsigned short OnesComplementSum( unsigned short const* first
 
     if( sum > 0x00ffff )
     {
-        // 0x0000 and 0xFFFF represents 0 to 1's complement. Therefore
-        // adding a late one carry.
+        // 16 bit 1's complement 0x0000 means the same as 0xFFFF.
+        // Therefore adding a carry number.
         sum = (sum & 0xffff) + (sum >> 16);
     }
     return STATIC_CAST( unsigned short, sum );
