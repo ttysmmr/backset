@@ -19,4 +19,7 @@
 /// Convert bits to any types.
 #define BIT_INDEX_OF_EACH_TYPE_SIZE( type, bits ) (bits % (NUMBER_OF_BITS_IN_A_BYTE * sizeof(type)))
 
+/// Convert bits to storage bytes.
+#define BYTE_SIZE_OF( bits ) (BYTE_INDEX_OF( bits ) + 1)
+
 #endif // #if !defined( BITS_H_20131007113556 )
