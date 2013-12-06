@@ -13,10 +13,10 @@
 /// Bit number of 1 byte.
 #define NUMBER_OF_BITS_IN_A_BYTE 8
 
-/// Bit number to byte number.
-#define BYTE_NUMBER_OF( bits ) (bits / NUMBER_OF_BITS_IN_A_BYTE)
+/// Convert bits to bytes.
+#define BYTE_INDEX_OF( bits ) (bits / NUMBER_OF_BITS_IN_A_BYTE)
 
-/// Convert to a number of specified type size unit a bit number.
-#define INDEX_OF_EACH_TYPE_SIZE( type, bits ) (bits % (NUMBER_OF_BITS_IN_A_BYTE * sizeof(type)))
+/// Convert bits to any types.
+#define BIT_INDEX_OF_EACH_TYPE_SIZE( type, bits ) (bits % (NUMBER_OF_BITS_IN_A_BYTE * sizeof(type)))
 
 #endif // #if !defined( BITS_H_20131007113556 )
